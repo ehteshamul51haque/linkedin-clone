@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import HeaderOption from './HeaderOption';
-import { Search, Home, SupervisorAccount } from '@material-ui/icons';
+import { Search, Home, SupervisorAccount, BusinessCenter, Chat, Notifications } from '@material-ui/icons';
 
 function Header() {
     return (
@@ -11,13 +11,17 @@ function Header() {
                     alt='linkedin-icon' />
                 <div className='header__search'>
                     <Search />
-                    <input type="text" />
+                    <input placeholder='Search' type="text" />
                 </div>
             </div>
 
             <div className='header__right'>
                 <HeaderOption Icon={Home} title="Home" />
                 <HeaderOption Icon={SupervisorAccount} title="My Network" />
+                <HeaderOption Icon={BusinessCenter} title="Jobs" />
+                <HeaderOption Icon={Chat} title="Messaging" />
+                <HeaderOption Icon={Notifications} title="Notifications" />
+                <HeaderOption avatar="https://unsplash.com/photos/QXevDflbl8A" title="me" />
             </div>
         </div>
     )
